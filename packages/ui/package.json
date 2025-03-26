@@ -1,0 +1,10 @@
+{
+  "name": "ui",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@shoelace-style/shoelace": "^2.0.0"
+  }
+}

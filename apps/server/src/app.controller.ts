@@ -6,7 +6,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Post('save')
-  async saveImage(@Body('image') image: string) {
-    return this.appService.saveImage(image);
+  async saveImage(@Body('imageUrl') imageUrl: string) {
+    return this.appService.saveImage(imageUrl);
   }
 }

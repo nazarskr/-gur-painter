@@ -12,7 +12,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "rxjs": "^7.0.0"
+    "rxjs": "^7.0.0",
+    "ui": "workspace:*"
   },
   "devDependencies": {
     "vite": "^5.0.0"
