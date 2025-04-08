@@ -13,24 +13,33 @@ export const drawerTemplate = `
     }
 
     .controls {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      width: 150px;
       margin-bottom: 1rem;
+    }
+    
+    .controls-row {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
     }
 
     .buttons {
       display: flex;
       gap: 1rem;
     }
+    
+    .full-width {
+        width: 100%;
+    }
   </style>
 
   <canvas width="600" height="400"></canvas>
   
-  <div class="controls">
-    <sl-color-picker value="#000000"></sl-color-picker>
-    <sl-range min="1" max="20" value="3"></sl-range>
+  <div class="controls full-width">
+    <div class="controls-row">
+        <sl-color-picker value="#000000" id="brush-color"></sl-color-picker>
+        <sl-color-picker value="#ffffff" id="background-color"></sl-color-picker> 
+    </div>
+    <sl-range min="1" max="50" value="3" label="Brush width" id="brush-width"></sl-range>
   </div>
   
   <div class="buttons">
